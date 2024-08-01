@@ -1,0 +1,61 @@
+@import url('https://fonts.cdnfonts.com/css/playfair-display');
+*{ 
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-picture{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)),
+    url("../Photos/bg.jpg");
+    height: 400px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+.header-title{
+    font-weight: normal;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    top: 80%;
+    font-size: 70px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.nav li{
+    flex-basis: 30%;
+    list-style-type: none;
+    margin: 40px auto;
+    font-size: 20px;
+
+}
+.left{
+    text-align: right;
+}
+.left p{
+    margin-left: auto;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav a:hover{
+    border-bottom: 1px solid rgba(180, 180, 180, 1);
+}
+.subtitle{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 23px;
+}
+.line{
+    border: 1px solid rgba(200, 200, 200, 0.4);
+}
+.nav p{
+    max-width: 50%;
+}
+.start{
+    font-size: 15px;
+    margin: 10px 0;
+}

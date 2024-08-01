@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="..\CSS\calculate.css" />
+    <title>Calculate price</title>
+</head>
+
+<body>
+        <header>
+            <h1>Calculate house price</h1>
+        </header>
+    
+        <section class="wrapper">
+            <h2>Enter details about your dream house:</h2>
+            <form class="form" id="predictionForm">
+                
+                <div class ="flexwrapper">
+                    <label for="Suprafață utilă (m²)">Area:</label>
+                    <input type="number" id="Suprafață utilă" name="Suprafață utilă" required />
+                </div>
+    
+                <div class ="flexwrapper">
+                    <label for="Tip încălzire">Type of heating:</label>
+                    <select id="Tip încălzire" name="Tip încălzire" required>
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="1">Coal and gas boiler</option>
+                        <option value="2">Central heating</option>
+                        <option value="3">Electric boiler</option>
+                        <option value="4">Electric and gas boiler</option>
+                        <option value="5">Electric and gas boiler and solar panels</option>
+                        <option value="6">Electric and gas boiler and heat pump</option>
+                        <option value="7">Gas boiler</option>
+                        <option value="8">Centralized gas boiler</option>
+                        <option value="9">Gas boiler and solar panels</option>
+                        <option value="10">Gas boiler and heat pump</option>
+                        <option value="11">Gas boiler and stove</option>
+                        <option value="12">Solar panels</option>
+                        <option value="13">Heat pump</option>
+                        <option value="14">Heat pump and solar panels</option>
+                        <option value="15">Heat pump and stove</option>
+                        <option value="16">Fireplace and gas boiler</option>
+                        <option value="17">Fireplace, gas boiler, solar panels</option>
+                        <option value="18">Fireplace, gas boiler, solar panels, centralized heating</option>
+                        <option value="19">Geothermal heat pump</option>
+                        <option value="20">Stove</option>
+                        <option value="21">Stove and coal boiler</option>
+                        <option value="22">Stove and gas boiler</option>
+                        <option value="23">Stove, gas boiler, centralized heating</option>
+                    </select>
+                </div>
+
+                <div class ="flexwrapper">
+                    <label for="Suprafață teren (m²)">Lot area:</label>
+                    <input type="number" id="Suprafață teren (m²)" name="Suprafață teren (m²)"required />
+                </div>
+    
+                <div class ="flexwrapper">
+                    <label for="Anul construcției">Year built:</label>
+                    <input type="number" id="Anul construcției" name="Anul construcției" required />
+                </div>
+    
+                <div class ="flexwrapper">
+                    <label for="Numărul de camere">Number of rooms:</label>
+                    <input type="number" id="Numărul de camere" name="Numărul de camere" required />
+                </div>
+    
+                <div class ="flexwrapper">
+                    <label for="Ac">Air conditioning:</label>
+                    <select name="Ac" id="AC">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="1">With air conditioning</option>
+                        <option value="2">Without air conditioning</option>
+                    </select>
+                </div>
+                <div class="buttonWrapper">
+                    <input class="submit" type="submit" value="Calculate the price"></button>
+                </div>
+            </form>
+    
+            <div class="Result">
+
+            </div>
+
+            <p id="result"></p>
+        </section>
+    
+        <a class="back" href="index.html">Go back home</a>
+
+        <script src="../JS/calculate.js"></script>
+</body>
+
+</html>
